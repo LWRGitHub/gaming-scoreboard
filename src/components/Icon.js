@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 const Icon = (props) => {
-  <svg className={ props.isHighScore ? 'is-high-score' : null }></svg>
-};
+  return (
+    <svg className={ props.isHighScore ? 'is-high-score' : null }></svg>
+  )
+}
 
 Icon.propTypes = {
     isHighScore: PropTypes.bool
