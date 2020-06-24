@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import Counter from './Counter';
 import Icon from './Icon';  
+import PlayerList from './PlayerList';
 
 class Player extends PureComponent {
 
@@ -33,7 +34,7 @@ class Player extends PureComponent {
           <Icon isHighScore={this.props.isHighScore} />
           { name }
         </span>
-
+       
         <Counter 
             score={score}
             index={index}

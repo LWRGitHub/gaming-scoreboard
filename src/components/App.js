@@ -73,7 +73,8 @@ class App extends Component {
             <PlayerList 
               players={this.state.players}
               changeScore={this.handleScoreChange}
-              removePlayer={this.handleRemovePlayer}          
+              removePlayer={this.handleRemovePlayer}
+              highScore={highScore}         
             />
 
           <AddPlayerForm addPlayer={this.handleAddPlayer}/>

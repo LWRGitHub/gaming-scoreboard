@@ -2,16 +2,20 @@ import React from 'react';
 import { Consumer } from './Context';
 import Player from './Player';
 
-const PlayerList = () => {
+const PlayerList = (props) => {
   return (
     <Consumer>
       { context => (
         <React.Fragment>
-          {context.players.map( (player, index) =>
+          {console.log(context.value)}
+          {context.map( (player, index) =>
             <Player 
               {...player}
               key={player.id.toString()} 
-              index={index}         
+              index={index} 
+              changeScore={props.changeScore}  
+              removePlayer={props.removePlayer}
+              isHighScore={props.highScore === player.score} 
             />
           )}
         </React.Fragment>

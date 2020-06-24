@@ -5,6 +5,7 @@ const Stats = () => {
     return (
         <Consumer>
             {context => {
+                console.log(context)
                 const totalPlayers = context.length;
                 const totalPoints = context.reduce((total, player) => {
                     return total + player.score;
