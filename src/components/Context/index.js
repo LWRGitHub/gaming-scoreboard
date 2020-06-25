@@ -69,7 +69,7 @@ export class Provider extends Component{
                     removePlayer: this.handleRemovePlayer,
                     addPlayer: this.handleAddPlayer
                 },
-                highScore: highScore
+                highScore: this.getHighScore
             }}>
                 {this.props.children}
             </ScoreboardContext.Provider>

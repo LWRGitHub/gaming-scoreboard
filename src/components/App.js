@@ -3,16 +3,13 @@ import Header from './Header';
 import PlayerList from './PlayerList';
 import AddPlayerForm from './AddPlayerForm';
 
-const App = () => {
-  const highScore = this.getHighScore();
+const App = (props) => {
+  // const highScore = this.getHighScore();
 
   return (
     <div className="scoreboard">
       <Header />
-        <PlayerList
-          highScore={highScore}         
-        />
-
+      <PlayerList /> 
       <AddPlayerForm />
     </div>
   );
