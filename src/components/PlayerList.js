@@ -7,14 +7,11 @@ const PlayerList = (props) => {
     <Consumer>
       { context => (
         <React.Fragment>
-          {console.log(context.value)}
-          {context.map( (player, index) =>
+          {context.players.map( (player, index) =>
             <Player 
               {...player}
               key={player.id.toString()} 
-              index={index} 
-              changeScore={props.changeScore}  
-              removePlayer={props.removePlayer}
+              index={index}
               isHighScore={props.highScore === player.score} 
             />
           )}

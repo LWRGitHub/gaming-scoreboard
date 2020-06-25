@@ -1,9 +1,8 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import Stats from './Stats';
 import Stopwatch from './Stopwatch';
 
-const Header = (/*{ title }*/) => {
+const Header = () => {
   return (
     <header>
       <Stats />
@@ -12,9 +11,5 @@ const Header = (/*{ title }*/) => {
     </header>
   );
 }
-
-// Header.defaultProps = {
-//   title: 'Scoreboard'
-// };
 
 export default Header;
